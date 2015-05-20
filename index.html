@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+ <head> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+ 
+  <title>Mi aplicacion</title>
+
+  <!--grupo CSS-->
+  <link rel="stylesheet" href="css/hola.min.css" />
+  <link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css" />
+  <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css" /> 
+  <link rel="stylesheet" href="css/theme_uno.min.css"/>
+        
+        
+
+
+  <!--grupo JavaScript-->
+  <script src="js/jquery-1.11.2.min.js"></script>
+  <script src="js/jquery.mobile-1.4.5.min.js"></script>
+  <script src="js/acciones.js" type="text/javascript"></script>
+  <!-- <script src="phonegap.js" type="text/javascript"></script> -->
+  
+
+
+ </head>
+
+ <body>
+  <div data-role="page" id="principal">
+	<div data-role="header">
+        <h1>CUANTO DIAS FALTAN PARA SU CUMPLE</h1>
+	</div>
+	<div data-role="content">	
+        <h2 align="center">BIENVENIDO</h2>
+		<p>Esta sera una aplicacion en la cual podras saber cuntos dias faltan para tu cumple comenzemos.......!</p>
+        <br>
+        <br>
+        <div align="center">
+        <a  href="#datos" id="btncomenzar" data-transition="pop" class="ui-btn ui-icon-arrow-r ui-btn-icon-right ui-shadow ui-corner-all ui-btn-inline ">COMENZAR</a>	
+        </div>	
+    </div>
+ 
+	<div data-role="footer" data-position="fixed">
+		<h1>@ASAEL BENITEZ</h1>
+        <h1>@MADRID GALICIAS</h1>
+	</div>
+</div>
+
+<div data-role="page" id="datos">
+	<div data-role="header">
+        <h1>Ingresa tu nombre</h1>
+	</div>
+    
+	<div data-role="content" >
+      <div data-role="controlgroup" data-type="horizontal" align="center">
+        <p>CUAL ES TU NOMBRE...</p>
+        <br>	
+        <input type="text" placeholder="NOMBRE" id="txtnombre" >
+      </div>  
+	  <div data-role="controlgroup" data-type="horizontal" align="center">
+         <a  href="#principal" data-transition="pop" class="ui-btn ui-icon-arrow-l ui-btn-icon-left ui-shadow ui-corner-all ui-btn-inline "> ATRAS</a>	
+        <a  href="#fechas"  id="btnfecha" data-transition="pop" class="ui-btn ui-icon-arrow-r ui-btn-icon-right ui-shadow ui-corner-all ui-btn-inline ">SIGUIENTE</a>	
+      </div>		
+    </div>
+    
+	<div data-role="footer" data-position="fixed">
+		<h1>@ASAEL BENITEZ</h1>
+        <h1>@MADRID GALICIAS</h1>
+	</div>
+</div>
+
+<div data-role="page" id="fechas">
+	<div data-role="header">
+        <h1>Ingresa tu fecha de cumpleaños</h1>
+	</div>
+	
+    <div align="center" data-role="controlgroup" data-type="horizontal">
+      <div align="center" data-role="controlgroup" data-type="horizontal" style="padding:40px">
+       <div style="width:100px; float:left; padding:12px" align="center">
+        Dia	
+		<input type="number" name="dia" placeholder="Día" max="31" min="1" id="txtdia">
+      DD
+      </div>
+      <div style="width:100px; float:left; padding:12px" align="center">
+        Mes
+        <input type="number" name="mes" placeholder="Mes" max="12" min="1" id="txtmes">
+       MM
+      </div>
+       <div style="width:100px; float:left; padding:12px" align="center">
+        Año
+        <input type="number" name="year" placeholder="Año" min="1950" id="txtyear">
+        AAAA
+      </div>
+   	  </div>
+    </div>
+    <br>
+   <div data-role="controlgroup" data-type="horizontal" align="center" style="clear:both">
+        <a  href="#datos" data-transition="pop" class="ui-btn ui-icon-arrow-l ui-btn-icon-left ui-shadow ui-corner-all ui-btn-inline "> ATRAS</a>	
+        <a  href="#resultado"  id="btnresultado" data-transition="pop" class="ui-btn ui-icon-arrow-r ui-btn-icon-right ui-shadow ui-corner-all ui-btn-inline " onClick="M()">SIGUIENTE</a>	
+    </div>
+    
+	<div data-role="footer" data-position="fixed">
+		<h1>@ASAEL BENITEZ</h1>
+        <h1>@MADRID GALICIAS</h1>
+	</div>
+</div>
+
+<div data-role="page" id="resultado" >
+	<div data-role="header">
+        <h1>CUANTO DIAS FALTAN PARA SU CUMPLE</h1>
+	</div>
+	<div data-role="content">
+      
+      
+      <div id="divdias" align="center" class="final">
+      </div>
+ 
+      <div id="divcumple" align="center" class="final"> 
+      </div>
+      
+      
+      <div id="divedad" align="center" class="final">
+      </div>
+      
+      <div id="divfelicidades" align="center" hidden="true" class="final">
+        ¡FELICIDADES YA SE APROXIMA TU CUMPLEAÑOS
+        <br>
+        <br>
+        <img src="150-globos-lisos-comunes-color-o-multicolor-super-oferta-20579-MLA20192829019_112014-F.jpg"width="150" height="150">
+ 
+      </div>
+      
+      <div align="center">
+       <a  href="#principal" id="btninicio" data-transition="pop" class="ui-btn ui-icon-home ui-btn-icon-right ui-shadow ui-corner-all ui-btn-inline " >inicio</a>
+      </div>       
+    </div>
+ 
+ 
+	<div data-role="footer" data-position="fixed">
+		<h1>@ASAEL BENITEZ</h1>
+        <h1>@MADRID GALICIAS</h1>
+	</div>
+</div>
+
+</body>
+
+</html>
